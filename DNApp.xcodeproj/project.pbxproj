@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BC109D50957815511BA23C8 /* Pods_DNApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B046359960052B4E9BC327AB /* Pods_DNApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DA9503EF1B3507D40063B5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */; };
+		DA9503F21B3507D40063B5B0 /* DNApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA9503F01B3507D40063B5B0 /* DNApp.xcdatamodeld */; };
+		DA9503F41B3507D40063B5B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9503F31B3507D40063B5B0 /* ViewController.swift */; };
+		DA9503F71B3507D40063B5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9503F51B3507D40063B5B0 /* Main.storyboard */; };
+		DA9503F91B3507D40063B5B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9503F81B3507D40063B5B0 /* Images.xcassets */; };
+		DA9503FC1B3507D40063B5B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */; };
+		DA9504081B3507D40063B5B0 /* DNAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9504071B3507D40063B5B0 /* DNAppTests.swift */; };
+		DAC6B9581B39027A00954189 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B9571B39027A00954189 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA9504021B3507D40063B5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9503E11B3507D40063B5B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA9503E81B3507D40063B5B0;
+			remoteInfo = DNApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		955A9C25E9178D87D1C791CE /* Pods-DNApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNApp/Pods-DNApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B046359960052B4E9BC327AB /* Pods_DNApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D331CB1A3932AC4CB38B457F /* Pods-DNApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNApp/Pods-DNApp.release.xcconfig"; sourceTree = "<group>"; };
+		DA9503E91B3507D40063B5B0 /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9503ED1B3507D40063B5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA9503F11B3507D40063B5B0 /* DNApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DNApp.xcdatamodel; sourceTree = "<group>"; };
+		DA9503F31B3507D40063B5B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA9503F61B3507D40063B5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA9503F81B3507D40063B5B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA9503FB1B3507D40063B5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DA9504011B3507D40063B5B0 /* DNAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9504061B3507D40063B5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9504071B3507D40063B5B0 /* DNAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAppTests.swift; sourceTree = "<group>"; };
+		DAC6B9571B39027A00954189 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA9503E61B3507D40063B5B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC109D50957815511BA23C8 /* Pods_DNApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9503FE1B3507D40063B5B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82C516D86275BB871671C630 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				955A9C25E9178D87D1C791CE /* Pods-DNApp.debug.xcconfig */,
+				D331CB1A3932AC4CB38B457F /* Pods-DNApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D966067573993ED4FD66A24A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B046359960052B4E9BC327AB /* Pods_DNApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA9503E01B3507D40063B5B0 = {
+			isa = PBXGroup;
+			children = (
+				DA9503EB1B3507D40063B5B0 /* DNApp */,
+				DA9504041B3507D40063B5B0 /* DNAppTests */,
+				DA9503EA1B3507D40063B5B0 /* Products */,
+				82C516D86275BB871671C630 /* Pods */,
+				D966067573993ED4FD66A24A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA9503EA1B3507D40063B5B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA9503E91B3507D40063B5B0 /* DNApp.app */,
+				DA9504011B3507D40063B5B0 /* DNAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA9503EB1B3507D40063B5B0 /* DNApp */ = {
+			isa = PBXGroup;
+			children = (
+				DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */,
+				DA9503F31B3507D40063B5B0 /* ViewController.swift */,
+				DAC6B9571B39027A00954189 /* LoginViewController.swift */,
+				DA9503F51B3507D40063B5B0 /* Main.storyboard */,
+				DA9503F81B3507D40063B5B0 /* Images.xcassets */,
+				DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */,
+				DA9503F01B3507D40063B5B0 /* DNApp.xcdatamodeld */,
+				DA9503EC1B3507D40063B5B0 /* Supporting Files */,
+			);
+			path = DNApp;
+			sourceTree = "<group>";
+		};
+		DA9503EC1B3507D40063B5B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA9503ED1B3507D40063B5B0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA9504041B3507D40063B5B0 /* DNAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA9504071B3507D40063B5B0 /* DNAppTests.swift */,
+				DA9504051B3507D40063B5B0 /* Supporting Files */,
+			);
+			path = DNAppTests;
+			sourceTree = "<group>";
+		};
+		DA9504051B3507D40063B5B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA9504061B3507D40063B5B0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA9503E81B3507D40063B5B0 /* DNApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA95040B1B3507D40063B5B0 /* Build configuration list for PBXNativeTarget "DNApp" */;
+			buildPhases = (
+				1D4D99F12AB9B50DB7F10C9A /* Check Pods Manifest.lock */,
+				DA9503E51B3507D40063B5B0 /* Sources */,
+				DA9503E61B3507D40063B5B0 /* Frameworks */,
+				DA9503E71B3507D40063B5B0 /* Resources */,
+				A5A52893449B7F3CA7B54807 /* Embed Pods Frameworks */,
+				08D4B6C19B4351111D14ABAA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNApp;
+			productName = DNApp;
+			productReference = DA9503E91B3507D40063B5B0 /* DNApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA9504001B3507D40063B5B0 /* DNAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA95040E1B3507D40063B5B0 /* Build configuration list for PBXNativeTarget "DNAppTests" */;
+			buildPhases = (
+				DA9503FD1B3507D40063B5B0 /* Sources */,
+				DA9503FE1B3507D40063B5B0 /* Frameworks */,
+				DA9503FF1B3507D40063B5B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA9504031B3507D40063B5B0 /* PBXTargetDependency */,
+			);
+			name = DNAppTests;
+			productName = DNAppTests;
+			productReference = DA9504011B3507D40063B5B0 /* DNAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA9503E11B3507D40063B5B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Jaison Vieira";
+				TargetAttributes = {
+					DA9503E81B3507D40063B5B0 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					DA9504001B3507D40063B5B0 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = DA9503E81B3507D40063B5B0;
+					};
+				};
+			};
+			buildConfigurationList = DA9503E41B3507D40063B5B0 /* Build configuration list for PBXProject "DNApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA9503E01B3507D40063B5B0;
+			productRefGroup = DA9503EA1B3507D40063B5B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA9503E81B3507D40063B5B0 /* DNApp */,
+				DA9504001B3507D40063B5B0 /* DNAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA9503E71B3507D40063B5B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9503F71B3507D40063B5B0 /* Main.storyboard in Resources */,
+				DA9503FC1B3507D40063B5B0 /* LaunchScreen.xib in Resources */,
+				DA9503F91B3507D40063B5B0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9503FF1B3507D40063B5B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08D4B6C19B4351111D14ABAA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNApp/Pods-DNApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D4D99F12AB9B50DB7F10C9A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5A52893449B7F3CA7B54807 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNApp/Pods-DNApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA9503E51B3507D40063B5B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC6B9581B39027A00954189 /* LoginViewController.swift in Sources */,
+				DA9503F41B3507D40063B5B0 /* ViewController.swift in Sources */,
+				DA9503EF1B3507D40063B5B0 /* AppDelegate.swift in Sources */,
+				DA9503F21B3507D40063B5B0 /* DNApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9503FD1B3507D40063B5B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9504081B3507D40063B5B0 /* DNAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA9504031B3507D40063B5B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA9503E81B3507D40063B5B0 /* DNApp */;
+			targetProxy = DA9504021B3507D40063B5B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA9503F51B3507D40063B5B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9503F61B3507D40063B5B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9503FB1B3507D40063B5B0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA9504091B3507D40063B5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA95040A1B3507D40063B5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA95040C1B3507D40063B5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955A9C25E9178D87D1C791CE /* Pods-DNApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DNApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA95040D1B3507D40063B5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D331CB1A3932AC4CB38B457F /* Pods-DNApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DNApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA95040F1B3507D40063B5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DNAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNApp.app/DNApp";
+			};
+			name = Debug;
+		};
+		DA9504101B3507D40063B5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DNAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNApp.app/DNApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA9503E41B3507D40063B5B0 /* Build configuration list for PBXProject "DNApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9504091B3507D40063B5B0 /* Debug */,
+				DA95040A1B3507D40063B5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA95040B1B3507D40063B5B0 /* Build configuration list for PBXNativeTarget "DNApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA95040C1B3507D40063B5B0 /* Debug */,
+				DA95040D1B3507D40063B5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA95040E1B3507D40063B5B0 /* Build configuration list for PBXNativeTarget "DNAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA95040F1B3507D40063B5B0 /* Debug */,
+				DA9504101B3507D40063B5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA9503F01B3507D40063B5B0 /* DNApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA9503F11B3507D40063B5B0 /* DNApp.xcdatamodel */,
+			);
+			currentVersion = DA9503F11B3507D40063B5B0 /* DNApp.xcdatamodel */;
+			path = DNApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA9503E11B3507D40063B5B0 /* Project object */;
+}

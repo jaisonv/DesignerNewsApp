@@ -1,0 +1,10 @@
+PODS:
+  - Spring (1.0.3)
+
+DEPENDENCIES:
+  - Spring (~> 1.0.3)
+
+SPEC CHECKSUMS:
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+
+COCOAPODS: 0.37.2

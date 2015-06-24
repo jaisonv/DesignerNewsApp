@@ -1,0 +1,10 @@
+# Ignore system files
+.DS_Store
+
+# Ignore user data
+DNApp.xcodeproj/project.xcworkspace/xcuserdata/
+DNApp.xcodeproj/xcuserdata/
+DNApp.xcworkspace/xcuserdata/
+
+# Ignore Pods
+Pods
