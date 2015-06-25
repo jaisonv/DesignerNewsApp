@@ -15,6 +15,7 @@
 		DA9503F91B3507D40063B5B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9503F81B3507D40063B5B0 /* Images.xcassets */; };
 		DA9503FC1B3507D40063B5B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */; };
 		DA9504081B3507D40063B5B0 /* DNAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9504071B3507D40063B5B0 /* DNAppTests.swift */; };
+		DAAC76F81B3BAC740047DC86 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */; };
 		DAC6B9581B39027A00954189 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B9571B39027A00954189 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		DA9504011B3507D40063B5B0 /* DNAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9504061B3507D40063B5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9504071B3507D40063B5B0 /* DNAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAppTests.swift; sourceTree = "<group>"; };
+		DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		DAC6B9571B39027A00954189 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */,
 				DA9503F31B3507D40063B5B0 /* ViewController.swift */,
 				DAC6B9571B39027A00954189 /* LoginViewController.swift */,
+				DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */,
 				DA9503F51B3507D40063B5B0 /* Main.storyboard */,
 				DA9503F81B3507D40063B5B0 /* Images.xcassets */,
 				DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */,
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAC76F81B3BAC740047DC86 /* LearnViewController.swift in Sources */,
 				DAC6B9581B39027A00954189 /* LoginViewController.swift in Sources */,
 				DA9503F41B3507D40063B5B0 /* ViewController.swift in Sources */,
 				DA9503EF1B3507D40063B5B0 /* AppDelegate.swift in Sources */,
