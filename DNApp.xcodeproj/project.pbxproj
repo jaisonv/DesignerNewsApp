@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7BC109D50957815511BA23C8 /* Pods_DNApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B046359960052B4E9BC327AB /* Pods_DNApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DA61538B1B3C790600FD4A97 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */; };
+		DA61538D1B3CC9EC00FD4A97 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */; };
+		DA61538F1B3CCAFD00FD4A97 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */; };
 		DA9503EF1B3507D40063B5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */; };
 		DA9503F21B3507D40063B5B0 /* DNApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA9503F01B3507D40063B5B0 /* DNApp.xcdatamodeld */; };
-		DA9503F41B3507D40063B5B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9503F31B3507D40063B5B0 /* ViewController.swift */; };
 		DA9503F71B3507D40063B5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9503F51B3507D40063B5B0 /* Main.storyboard */; };
 		DA9503F91B3507D40063B5B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9503F81B3507D40063B5B0 /* Images.xcassets */; };
 		DA9503FC1B3507D40063B5B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */; };
@@ -33,11 +35,13 @@
 		955A9C25E9178D87D1C791CE /* Pods-DNApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNApp/Pods-DNApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B046359960052B4E9BC327AB /* Pods_DNApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D331CB1A3932AC4CB38B457F /* Pods-DNApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNApp/Pods-DNApp.release.xcconfig"; sourceTree = "<group>"; };
+		DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
+		DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		DA9503E91B3507D40063B5B0 /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9503ED1B3507D40063B5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA9503F11B3507D40063B5B0 /* DNApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DNApp.xcdatamodel; sourceTree = "<group>"; };
-		DA9503F31B3507D40063B5B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA9503F61B3507D40063B5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA9503F81B3507D40063B5B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA9503FB1B3507D40063B5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -108,8 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */,
-				DA9503F31B3507D40063B5B0 /* ViewController.swift */,
+				DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */,
 				DAC6B9571B39027A00954189 /* LoginViewController.swift */,
+				DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */,
+				DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */,
 				DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */,
 				DA9503F51B3507D40063B5B0 /* Main.storyboard */,
 				DA9503F81B3507D40063B5B0 /* Images.xcassets */,
@@ -297,8 +303,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAAC76F81B3BAC740047DC86 /* LearnViewController.swift in Sources */,
+				DA61538D1B3CC9EC00FD4A97 /* MenuViewController.swift in Sources */,
 				DAC6B9581B39027A00954189 /* LoginViewController.swift in Sources */,
-				DA9503F41B3507D40063B5B0 /* ViewController.swift in Sources */,
+				DA61538B1B3C790600FD4A97 /* StoriesTableViewController.swift in Sources */,
+				DA61538F1B3CCAFD00FD4A97 /* WebViewController.swift in Sources */,
 				DA9503EF1B3507D40063B5B0 /* AppDelegate.swift in Sources */,
 				DA9503F21B3507D40063B5B0 /* DNApp.xcdatamodeld in Sources */,
 			);

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>26403929-1F25-482D-902F-EE4EB435BDBB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DNApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>05ADD94FC3B673BEE8477B0C30ADAE3DFC5CF5F4</key>
+		<string>https://github.com/jaisonv/DesignerNewsApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DNApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>05ADD94FC3B673BEE8477B0C30ADAE3DFC5CF5F4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jaisonv/DesignerNewsApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>05ADD94FC3B673BEE8477B0C30ADAE3DFC5CF5F4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>05ADD94FC3B673BEE8477B0C30ADAE3DFC5CF5F4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DNApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
