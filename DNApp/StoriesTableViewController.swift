@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Spring
 
 class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate {
 
@@ -28,20 +29,15 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return data.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell") as! StoryTableViewCell
         
-        cell.titleLabel.text = "Learn iOS Design and Xcode."
-        cell.badgeImageView.image = UIImage(named: "badge-apple")
-        cell.avatarImageView.image = UIImage(named: "content-avatar-default")
-        cell.authorLabel.text = "Meng To, designer and coder."
-        cell.timeLabel.text = "5m"
-        cell.upvoteButton.setTitle("59", forState: UIControlState.Normal)
-        cell.commentButton.setTitle("32", forState: UIControlState.Normal)
+        let story = data[indexPath.row]
+        cell.configureWithStory(story)
         
         cell.delegate = self
         

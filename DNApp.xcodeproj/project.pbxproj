@@ -12,6 +12,7 @@
 		DA61538D1B3CC9EC00FD4A97 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */; };
 		DA61538F1B3CCAFD00FD4A97 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */; };
 		DA6153911B3CDAB800FD4A97 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6153901B3CDAB800FD4A97 /* StoryTableViewCell.swift */; };
+		DA6AC5B71B3DBC6100E2F3A1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AC5B61B3DBC6100E2F3A1 /* Data.swift */; };
 		DA9503EF1B3507D40063B5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */; };
 		DA9503F21B3507D40063B5B0 /* DNApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA9503F01B3507D40063B5B0 /* DNApp.xcdatamodeld */; };
 		DA9503F71B3507D40063B5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9503F51B3507D40063B5B0 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		DA6153901B3CDAB800FD4A97 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		DA6AC5B61B3DBC6100E2F3A1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		DA9503E91B3507D40063B5B0 /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9503ED1B3507D40063B5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */,
 				DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */,
 				DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */,
+				DA6AC5B61B3DBC6100E2F3A1 /* Data.swift */,
 				DA9503F51B3507D40063B5B0 /* Main.storyboard */,
 				DA9503F81B3507D40063B5B0 /* Images.xcassets */,
 				DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */,
@@ -312,6 +315,7 @@
 				DA61538F1B3CCAFD00FD4A97 /* WebViewController.swift in Sources */,
 				DA9503EF1B3507D40063B5B0 /* AppDelegate.swift in Sources */,
 				DA9503F21B3507D40063B5B0 /* DNApp.xcdatamodeld in Sources */,
+				DA6AC5B71B3DBC6100E2F3A1 /* Data.swift in Sources */,
 				DA6153911B3CDAB800FD4A97 /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

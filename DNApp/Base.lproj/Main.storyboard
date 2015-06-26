@@ -27,8 +27,8 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKx-AX-ur7">
-                                            <rect key="frame" x="35" y="5" width="240" height="25"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                            <rect key="frame" x="35" y="8" width="240" height="25"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -63,7 +63,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMP-lG-Z2F" customClass="SpringButton" customModule="Spring">
-                                            <rect key="frame" x="105" y="54" width="70" height="33"/>
+                                            <rect key="frame" x="95" y="54" width="70" height="33"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="azL-SV-Nbs"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="ezO-NA-qsU"/>
@@ -92,36 +92,21 @@
                                         <constraint firstItem="vKx-AX-ur7" firstAttribute="leading" secondItem="sY4-ek-V52" secondAttribute="trailing" constant="5" id="2LO-78-5cR"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="ebV-zo-QNx" secondAttribute="trailing" constant="10" id="3xX-L4-yOk"/>
                                         <constraint firstAttribute="bottom" secondItem="soi-hD-YXA" secondAttribute="bottom" constant="12" id="5kb-Lt-S3a"/>
-                                        <constraint firstItem="zbv-nW-S6W" firstAttribute="top" secondItem="vKx-AX-ur7" secondAttribute="bottom" constant="10" id="7Uh-A7-F1v"/>
-                                        <constraint firstItem="sY4-ek-V52" firstAttribute="leading" secondItem="euB-Js-FNj" secondAttribute="leadingMargin" constant="10" id="DKQ-7n-DCZ"/>
-                                        <constraint firstItem="ebV-zo-QNx" firstAttribute="top" secondItem="vKx-AX-ur7" secondAttribute="bottom" constant="6" id="DMg-j7-1bH"/>
-                                        <constraint firstItem="vKx-AX-ur7" firstAttribute="centerY" secondItem="sY4-ek-V52" secondAttribute="centerY" constant="-0.5" id="Dam-Om-NEn"/>
+                                        <constraint firstItem="zbv-nW-S6W" firstAttribute="top" secondItem="vKx-AX-ur7" secondAttribute="bottom" constant="7" id="7Uh-A7-F1v"/>
+                                        <constraint firstItem="ebV-zo-QNx" firstAttribute="top" secondItem="vKx-AX-ur7" secondAttribute="bottom" constant="3" id="DMg-j7-1bH"/>
                                         <constraint firstAttribute="trailing" secondItem="vKx-AX-ur7" secondAttribute="trailing" constant="45" id="FAf-TC-ldq"/>
                                         <constraint firstItem="soi-hD-YXA" firstAttribute="leading" secondItem="euB-Js-FNj" secondAttribute="leading" constant="25" id="FN0-PE-osP"/>
                                         <constraint firstItem="vKx-AX-ur7" firstAttribute="leading" secondItem="zbv-nW-S6W" secondAttribute="leading" id="J1o-Hz-4EW"/>
-                                        <constraint firstItem="BMP-lG-Z2F" firstAttribute="leading" secondItem="soi-hD-YXA" secondAttribute="trailing" constant="10" id="KC5-p2-d5s"/>
+                                        <constraint firstItem="BMP-lG-Z2F" firstAttribute="leading" secondItem="soi-hD-YXA" secondAttribute="trailing" id="KC5-p2-d5s"/>
                                         <constraint firstItem="rGV-iU-TNJ" firstAttribute="top" secondItem="euB-Js-FNj" secondAttribute="top" constant="8" id="Lxa-pA-d4D"/>
                                         <constraint firstItem="sY4-ek-V52" firstAttribute="top" secondItem="euB-Js-FNj" secondAttribute="top" constant="8" id="NOQ-9y-8Hw"/>
-                                        <constraint firstItem="rGV-iU-TNJ" firstAttribute="top" secondItem="euB-Js-FNj" secondAttribute="topMargin" constant="8" id="Tkh-Ep-QhK"/>
                                         <constraint firstItem="soi-hD-YXA" firstAttribute="top" secondItem="ebV-zo-QNx" secondAttribute="bottom" id="YmK-Ur-QCD"/>
                                         <constraint firstItem="sY4-ek-V52" firstAttribute="leading" secondItem="euB-Js-FNj" secondAttribute="leading" constant="10" id="aLI-VB-Ctb"/>
-                                        <constraint firstItem="vKx-AX-ur7" firstAttribute="top" secondItem="euB-Js-FNj" secondAttribute="topMargin" constant="-3" id="buw-C0-QU7"/>
                                         <constraint firstItem="ebV-zo-QNx" firstAttribute="leading" secondItem="zbv-nW-S6W" secondAttribute="trailing" constant="5" id="dR1-vx-aql"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="rGV-iU-TNJ" secondAttribute="trailing" constant="8" id="hdH-S9-lpO"/>
+                                        <constraint firstItem="vKx-AX-ur7" firstAttribute="top" secondItem="euB-Js-FNj" secondAttribute="top" constant="8" id="jdS-da-GpD"/>
                                         <constraint firstItem="BMP-lG-Z2F" firstAttribute="top" secondItem="ebV-zo-QNx" secondAttribute="bottom" id="ngs-FZ-lgp"/>
-                                        <constraint firstItem="sY4-ek-V52" firstAttribute="top" secondItem="euB-Js-FNj" secondAttribute="topMargin" constant="8" id="tcC-jN-CYn"/>
-                                        <constraint firstItem="rGV-iU-TNJ" firstAttribute="leading" secondItem="vKx-AX-ur7" secondAttribute="trailing" constant="45" id="xG1-EP-2fn"/>
                                         <constraint firstAttribute="trailing" secondItem="rGV-iU-TNJ" secondAttribute="trailing" constant="8" id="yyT-5O-ioe"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="DKQ-7n-DCZ"/>
-                                            <exclude reference="tcC-jN-CYn"/>
-                                            <exclude reference="Tkh-Ep-QhK"/>
-                                            <exclude reference="hdH-S9-lpO"/>
-                                            <exclude reference="xG1-EP-2fn"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
