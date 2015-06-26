@@ -115,12 +115,12 @@
 			children = (
 				DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */,
 				DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */,
+				DA6153901B3CDAB800FD4A97 /* StoryTableViewCell.swift */,
 				DAC6B9571B39027A00954189 /* LoginViewController.swift */,
 				DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */,
 				DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */,
 				DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */,
 				DA9503F51B3507D40063B5B0 /* Main.storyboard */,
-				DA6153901B3CDAB800FD4A97 /* StoryTableViewCell.swift */,
 				DA9503F81B3507D40063B5B0 /* Images.xcassets */,
 				DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */,
 				DA9503F01B3507D40063B5B0 /* DNApp.xcdatamodeld */,
