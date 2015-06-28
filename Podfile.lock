@@ -2,7 +2,16 @@ PODS:
   - Spring (1.0.3)
 
 DEPENDENCIES:
-  - Spring (~> 1.0.3)
+  - Spring (from `https://github.com/jaisonv/Spring.git`)
+
+EXTERNAL SOURCES:
+  Spring:
+    :git: https://github.com/jaisonv/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 679342edf59cfba13374fec5c9dfa5b6cb7994dd
+    :git: https://github.com/jaisonv/Spring.git
 
 SPEC CHECKSUMS:
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
