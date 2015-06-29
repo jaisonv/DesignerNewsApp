@@ -6,6 +6,7 @@ target 'DNApp' do
 
 #  pod 'Spring', '~> 1.0.3'
   pod 'Spring', :git => 'https://github.com/jaisonv/Spring.git'
+  pod 'SwiftyJSON', '~> 2.2.0'
 
 end
 

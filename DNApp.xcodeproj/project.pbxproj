@@ -22,6 +22,7 @@
 		DA9504081B3507D40063B5B0 /* DNAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9504071B3507D40063B5B0 /* DNAppTests.swift */; };
 		DAAC76F81B3BAC740047DC86 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */; };
 		DAC6B9581B39027A00954189 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B9571B39027A00954189 /* LoginViewController.swift */; };
+		DAE3D0B71B40FEF20060838C /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3D0B61B40FEF20060838C /* CommentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		DA9504071B3507D40063B5B0 /* DNAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAppTests.swift; sourceTree = "<group>"; };
 		DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		DAC6B9571B39027A00954189 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DAE3D0B61B40FEF20060838C /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */,
 				DA6153901B3CDAB800FD4A97 /* StoryTableViewCell.swift */,
 				DA3C04DB1B3FE186007E6C08 /* CommentsTableViewController.swift */,
+				DAE3D0B61B40FEF20060838C /* CommentTableViewCell.swift */,
 				DAC6B9571B39027A00954189 /* LoginViewController.swift */,
 				DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */,
 				DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */,
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE3D0B71B40FEF20060838C /* CommentTableViewCell.swift in Sources */,
 				DAAC76F81B3BAC740047DC86 /* LearnViewController.swift in Sources */,
 				DA61538D1B3CC9EC00FD4A97 /* MenuViewController.swift in Sources */,
 				DAC6B9581B39027A00954189 /* LoginViewController.swift in Sources */,

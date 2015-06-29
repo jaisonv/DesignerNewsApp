@@ -1,8 +1,10 @@
 PODS:
   - Spring (1.0.3)
+  - SwiftyJSON (2.2.0)
 
 DEPENDENCIES:
   - Spring (from `https://github.com/jaisonv/Spring.git`)
+  - SwiftyJSON (~> 2.2.0)
 
 EXTERNAL SOURCES:
   Spring:
@@ -15,5 +17,6 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
 
 COCOAPODS: 0.37.2

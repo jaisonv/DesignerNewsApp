@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-var data: [[String:AnyObject]] = [
+var data: JSON = [
     [
         "id": 51669,
         "title": "Prott for Android",
@@ -31,7 +32,7 @@ var data: [[String:AnyObject]] = [
         "comments": [
             [
                 "id": 157632,
-                "body": "Love it!",
+                "body": "dude, so creative! much fun! )\r\n\r\ncan I steal it?",
                 "body_html": "<p>Love it!</p>\n",
                 "created_at": "2015-06-26T08:28:15Z",
                 "depth": 0,

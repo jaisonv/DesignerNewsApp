@@ -156,7 +156,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="140" id="zt4-Zf-h2V" customClass="StoryTableViewCell" customModule="DNApp" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="140" id="zt4-Zf-h2V" customClass="StoryTableViewCell" customModule="DNApp" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zt4-Zf-h2V" id="fTB-vN-dhl">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -267,6 +267,99 @@
                                     <outlet property="timeLabel" destination="003-En-oer" id="Jjy-mz-3bx"/>
                                     <outlet property="titleLabel" destination="KrK-cr-QGW" id="4uU-Lz-Fd9"/>
                                     <outlet property="upvoteButton" destination="kvc-g9-jjK" id="qto-jr-UiG"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="119" id="VKo-5q-e7t" customClass="CommentTableViewCell" customModule="DNApp" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VKo-5q-e7t" id="HGE-iT-A9A">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H5o-nF-zWZ">
+                                            <rect key="frame" x="10" y="8" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="AcJ-a3-cdl"/>
+                                                <constraint firstAttribute="height" constant="20" id="Xji-2C-dze"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCH-k7-fJR">
+                                            <rect key="frame" x="35" y="8" width="240" height="22"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                            <color key="textColor" red="0.58431372549019611" green="0.65098039215686276" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-ge-YKJ">
+                                            <rect key="frame" x="294" y="8" width="18" height="21"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <color key="textColor" red="0.58823529409999997" green="0.65098039220000004" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeg-Mf-6oe" customClass="SpringButton" customModule="Spring">
+                                            <rect key="frame" x="25" y="33" width="70" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="Egb-22-l5y"/>
+                                                <constraint firstAttribute="height" constant="33" id="ud3-T8-0wb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="813" image="icon-upvote">
+                                                <color key="titleColor" red="0.58431372550000005" green="0.65098039220000004" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="upvoteButtonDidTouch:" destination="VKo-5q-e7t" eventType="touchUpInside" id="nTE-je-zqz"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFG-Cj-Xlu" customClass="SpringButton" customModule="Spring">
+                                            <rect key="frame" x="95" y="33" width="70" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33" id="Byd-eW-3PI"/>
+                                                <constraint firstAttribute="width" constant="70" id="LST-uE-yQh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" image="icon-reply">
+                                                <color key="titleColor" red="0.58431372550000005" green="0.65098039220000004" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="replyButtonDidTouch:" destination="VKo-5q-e7t" eventType="touchUpInside" id="bq2-wJ-MSp"/>
+                                            </connections>
+                                        </button>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Text" translatesAutoresizingMaskIntoConstraints="NO" id="mw1-Ic-QdB" customClass="AutoTextView" customModule="Spring">
+                                            <rect key="frame" x="35" y="69" width="270" height="38"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mw1-Ic-QdB" firstAttribute="top" secondItem="rFG-Cj-Xlu" secondAttribute="bottom" constant="3" id="3GO-4X-q7h"/>
+                                        <constraint firstAttribute="trailing" secondItem="YCH-k7-fJR" secondAttribute="trailing" constant="45" id="84I-y5-DHs"/>
+                                        <constraint firstItem="YCH-k7-fJR" firstAttribute="top" secondItem="HGE-iT-A9A" secondAttribute="top" constant="8" id="CYn-lR-klC"/>
+                                        <constraint firstItem="rFG-Cj-Xlu" firstAttribute="leading" secondItem="eeg-Mf-6oe" secondAttribute="trailing" id="DCz-Fq-Efx"/>
+                                        <constraint firstItem="SJM-ge-YKJ" firstAttribute="top" secondItem="HGE-iT-A9A" secondAttribute="top" constant="8" id="ECf-LP-G8Z"/>
+                                        <constraint firstItem="mw1-Ic-QdB" firstAttribute="leading" secondItem="HGE-iT-A9A" secondAttribute="leading" constant="35" id="NRl-J1-576"/>
+                                        <constraint firstAttribute="bottom" secondItem="mw1-Ic-QdB" secondAttribute="bottom" constant="11" id="TuM-tO-oeE"/>
+                                        <constraint firstItem="H5o-nF-zWZ" firstAttribute="top" secondItem="HGE-iT-A9A" secondAttribute="top" constant="8" id="VeN-BR-FeM"/>
+                                        <constraint firstAttribute="trailing" secondItem="mw1-Ic-QdB" secondAttribute="trailing" constant="15" id="dxj-0V-LQr"/>
+                                        <constraint firstItem="rFG-Cj-Xlu" firstAttribute="top" secondItem="YCH-k7-fJR" secondAttribute="bottom" constant="3" id="fb9-sB-ax0"/>
+                                        <constraint firstAttribute="trailing" secondItem="SJM-ge-YKJ" secondAttribute="trailing" constant="8" id="iHh-Jl-Cn7"/>
+                                        <constraint firstItem="H5o-nF-zWZ" firstAttribute="leading" secondItem="HGE-iT-A9A" secondAttribute="leading" constant="10" id="lqN-qg-rAS"/>
+                                        <constraint firstItem="eeg-Mf-6oe" firstAttribute="top" secondItem="YCH-k7-fJR" secondAttribute="bottom" constant="3" id="oAc-Xm-ooB"/>
+                                        <constraint firstItem="eeg-Mf-6oe" firstAttribute="leading" secondItem="HGE-iT-A9A" secondAttribute="leading" constant="25" id="twu-W6-Rm8"/>
+                                        <constraint firstItem="YCH-k7-fJR" firstAttribute="leading" secondItem="H5o-nF-zWZ" secondAttribute="trailing" constant="5" id="wMC-wN-wCN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="authorLabel" destination="YCH-k7-fJR" id="YE1-Fj-3Bg"/>
+                                    <outlet property="avatarImageView" destination="H5o-nF-zWZ" id="rfB-8E-yEc"/>
+                                    <outlet property="commentTextView" destination="mw1-Ic-QdB" id="Lw8-mC-Lo4"/>
+                                    <outlet property="replyButton" destination="rFG-Cj-Xlu" id="WGH-Ei-0IJ"/>
+                                    <outlet property="timeLabel" destination="SJM-ge-YKJ" id="jN7-I6-gT6"/>
+                                    <outlet property="upvoteButton" destination="eeg-Mf-6oe" id="OmC-LR-nyb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -819,6 +912,7 @@
         <image name="icon-hamburger" width="22" height="16"/>
         <image name="icon-mail" width="26" height="18"/>
         <image name="icon-password" width="25" height="25"/>
+        <image name="icon-reply" width="20" height="16"/>
         <image name="icon-sketch" width="64" height="61"/>
         <image name="icon-twitter" width="18" height="14"/>
         <image name="icon-upvote" width="18" height="16"/>
