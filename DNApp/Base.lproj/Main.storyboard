@@ -139,7 +139,7 @@
                     <connections>
                         <segue destination="ZJt-dY-eie" kind="presentation" identifier="LoginSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="vZm-X8-XNi"/>
                         <segue destination="AgE-iy-YlU" kind="presentation" identifier="MenuSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="9Km-NO-0xn"/>
-                        <segue destination="s6D-w5-Zut" kind="presentation" identifier="WebSegue" modalPresentationStyle="overCurrentContext" id="lcU-xM-hyT"/>
+                        <segue destination="s6D-w5-Zut" kind="presentation" identifier="WebSegue" id="lcU-xM-hyT"/>
                         <segue destination="yCL-ZI-Idp" kind="show" identifier="CommentsSegue" id="KHU-T7-BjB"/>
                     </connections>
                 </tableViewController>
@@ -713,6 +713,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="twitterButtonDidTouch:" destination="7gh-cT-Vpa" eventType="touchUpInside" id="EDc-4e-jLh"/>
+                                        </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-sketch" translatesAutoresizingMaskIntoConstraints="NO" id="pol-Hc-mI4" customClass="SpringImageView" customModule="Spring">
                                         <rect key="frame" x="15" y="39" width="64" height="61"/>
@@ -819,12 +822,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="4g7-VR-gYH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="2"/>
+                                <color key="progressTintColor" red="0.21568627450980393" green="0.72941176470588232" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Hth-JT-gGe" firstAttribute="leading" secondItem="BJb-Oi-Jwq" secondAttribute="leadingMargin" constant="4" id="1Hb-oP-ZRY"/>
                             <constraint firstItem="Hth-JT-gGe" firstAttribute="centerY" secondItem="wff-sz-tzH" secondAttribute="centerY" id="3vV-9h-vp9"/>
+                            <constraint firstItem="4g7-VR-gYH" firstAttribute="leading" secondItem="BJb-Oi-Jwq" secondAttribute="leading" id="56X-GL-lgi"/>
+                            <constraint firstAttribute="trailing" secondItem="4g7-VR-gYH" secondAttribute="trailing" id="6oV-Jk-y6G"/>
                             <constraint firstAttribute="trailing" secondItem="8iP-xi-ab9" secondAttribute="trailing" id="9hy-Up-6JM"/>
+                            <constraint firstItem="4g7-VR-gYH" firstAttribute="top" secondItem="BJb-Oi-Jwq" secondAttribute="top" id="BpQ-iF-HgF"/>
                             <constraint firstItem="EcC-YX-KeK" firstAttribute="top" secondItem="Hth-JT-gGe" secondAttribute="bottom" constant="20" id="CEh-7S-suF"/>
                             <constraint firstItem="EcC-YX-KeK" firstAttribute="top" secondItem="8iP-xi-ab9" secondAttribute="bottom" id="S1R-gH-8Je"/>
                             <constraint firstItem="wff-sz-tzH" firstAttribute="leading" secondItem="Hth-JT-gGe" secondAttribute="trailing" constant="20" id="ccy-Wt-G2W"/>
@@ -834,6 +844,10 @@
                             <constraint firstItem="8iP-xi-ab9" firstAttribute="top" secondItem="BJb-Oi-Jwq" secondAttribute="top" id="xgJ-YL-ZG3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressView" destination="4g7-VR-gYH" id="fea-0b-cfB"/>
+                        <outlet property="webView" destination="8iP-xi-ab9" id="9Rv-sg-E7t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDl-5T-6ee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
