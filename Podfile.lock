@@ -1,8 +1,10 @@
 PODS:
+  - Alamofire (1.2.3)
   - Spring (1.0.3)
   - SwiftyJSON (2.2.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 1.2)
   - Spring (from `https://github.com/jaisonv/Spring.git`)
   - SwiftyJSON (~> 2.2.0)
 
@@ -16,6 +18,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/jaisonv/Spring.git
 
 SPEC CHECKSUMS:
+  Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
 

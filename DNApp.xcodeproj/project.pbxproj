@@ -27,6 +27,7 @@
 		DAAC76F81B3BAC740047DC86 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */; };
 		DAC6B9581B39027A00954189 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B9571B39027A00954189 /* LoginViewController.swift */; };
 		DAE3D0B71B40FEF20060838C /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3D0B61B40FEF20060838C /* CommentTableViewCell.swift */; };
+		DAE9323D1B43879800A1B8BD /* DNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE9323C1B43879800A1B8BD /* DNService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		DAC6B9571B39027A00954189 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DAE3D0B61B40FEF20060838C /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		DAE9323C1B43879800A1B8BD /* DNService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */,
 				DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */,
 				DA6AC5B61B3DBC6100E2F3A1 /* Data.swift */,
+				DAE9323C1B43879800A1B8BD /* DNService.swift */,
 				DA9503F51B3507D40063B5B0 /* Main.storyboard */,
 				DA9503F81B3507D40063B5B0 /* Images.xcassets */,
 				DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */,
@@ -355,6 +358,7 @@
 				DA7CDAD61B4350A900AB5C7A /* TPKeyboardAvoidingTableView.m in Sources */,
 				DA9503F21B3507D40063B5B0 /* DNApp.xcdatamodeld in Sources */,
 				DA6AC5B71B3DBC6100E2F3A1 /* Data.swift in Sources */,
+				DAE9323D1B43879800A1B8BD /* DNService.swift in Sources */,
 				DA7CDAD41B4350A900AB5C7A /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				DA6153911B3CDAB800FD4A97 /* StoryTableViewCell.swift in Sources */,
 			);
