@@ -9,6 +9,10 @@
 import UIKit
 import Spring
 
+protocol LoginViewControllerDelegate: class {
+    func loginViewControllerDidLogin(controller: LoginViewController)
+}
+
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var dialogView: DesignableView!
@@ -16,6 +20,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordImageView: SpringImageView!
     @IBOutlet weak var emailTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignableTextField!
+    weak var delegate: LoginViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +30,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func loginButtonTouch(sender: AnyObject) {
-        dialogView.animation = "shake"
-        dialogView.animate()
+        DNService.loginWithEmail(emailTextField.text, password: passwordTextField.text) { (token) -> () in
+            if let token = token {
+                LocalStore.saveToken(token)
+                self.dismissViewControllerAnimated(true, completion: nil)
+                self.delegate?.loginViewControllerDidLogin(self)
+            } else {
+                self.dialogView.animation = "shake"
+                self.dialogView.animate()
+            }
+        }
     }
 
     @IBAction func closeButtonDidTouch(sender: AnyObject) {

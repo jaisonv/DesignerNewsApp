@@ -10,12 +10,13 @@ import UIKit
 import Spring
 import SwiftyJSON
 
-class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate, MenuViewControllerDelegate {
+class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate, MenuViewControllerDelegate, LoginViewControllerDelegate {
     
     let transitionManager = TransitionManager()
     var stories: JSON! = []
     var isFirstTime = true
     var section = ""
+    @IBOutlet weak var loginButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +50,14 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
             self.tableView.reloadData()
             self.view.hideLoading()
             self.refreshControl?.endRefreshing()
+            
+            if LocalStore.getToken() == nil {
+                self.loginButton.title = "Login"
+                self.loginButton.enabled = true
+            } else {
+                self.loginButton.title = ""
+                self.loginButton.enabled = false
+            }
         }
     }
 
@@ -85,7 +94,18 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
     // MARK: StoryTableViewCellDelegate
     
     func storyTableViewCellDidTouchUpvote(cell: StoryTableViewCell, sender: AnyObject) {
-        // TODO: implement upvote
+        if let token = LocalStore.getToken() {
+            let indexPath = tableView.indexPathForCell(cell)!
+            let story = stories[indexPath.row]
+            let storyId = story["id"].int!
+            DNService.upvoteStoryWithId(storyId, token: token, response: { (successful) -> () in
+                println(successful)
+            })
+            LocalStore.saveUpvotedStory(storyId)
+            cell.configureWithStory(story)
+        } else {
+            performSegueWithIdentifier("LoginSegue", sender: self)
+        }
     }
     
     func storyTableViewCellDidTouchComment(cell: StoryTableViewCell, sender: AnyObject) {
@@ -108,29 +128,46 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
         section = "recent"
     }
     
+    func menuViewControllerDidLogout(controller: MenuViewController) {
+        loadStories(section, page: 1)
+        view.showLoading()
+    }
+    
     // MARK: Misc
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "CommentsSegue" {
-            let toView = segue.destinationViewController as? CommentsTableViewController
+            let toView = segue.destinationViewController as! CommentsTableViewController
             let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
-            toView?.story = stories[indexPath.row]
+            toView.story = stories[indexPath.row]
         }
         
         if segue.identifier == "WebSegue" {
-            let toView = segue.destinationViewController as? WebViewController
+            let toView = segue.destinationViewController as! WebViewController
             let indexPath = sender as! NSIndexPath
             let url = stories[indexPath.row]["url"].string!
-            toView?.url = url
+            toView.url = url
         
             UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
             
-            toView?.transitioningDelegate = transitionManager
+            toView.transitioningDelegate = transitionManager
         }
         
         if segue.identifier == "MenuSegue" {
-            let toView = segue.destinationViewController as? MenuViewController
-            toView?.delegate = self
+            let toView = segue.destinationViewController as! MenuViewController
+            toView.delegate = self
         }
+        
+        if segue.identifier == "LoginSegue" {
+            let toView = segue.destinationViewController as! LoginViewController
+            toView.delegate = self
+        }
+    }
+    
+    // MARK: LoginViewControllerDelegate
+    
+    func loginViewControllerDidLogin(controller: LoginViewController) {
+        loadStories(section, page: 1)
+        view.showLoading()
     }
 }

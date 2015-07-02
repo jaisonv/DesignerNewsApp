@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BC109D50957815511BA23C8 /* Pods_DNApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B046359960052B4E9BC327AB /* Pods_DNApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DA3B607A1B44992C0046B5CF /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B60791B44992C0046B5CF /* LocalStore.swift */; };
 		DA3C04DC1B3FE186007E6C08 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C04DB1B3FE186007E6C08 /* CommentsTableViewController.swift */; };
 		DA61538B1B3C790600FD4A97 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */; };
 		DA61538D1B3CC9EC00FD4A97 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */; };
@@ -44,6 +45,7 @@
 		955A9C25E9178D87D1C791CE /* Pods-DNApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNApp/Pods-DNApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B046359960052B4E9BC327AB /* Pods_DNApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D331CB1A3932AC4CB38B457F /* Pods-DNApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNApp/Pods-DNApp.release.xcconfig"; sourceTree = "<group>"; };
+		DA3B60791B44992C0046B5CF /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		DA3C04DB1B3FE186007E6C08 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
 		DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				DAAC76F71B3BAC740047DC86 /* LearnViewController.swift */,
 				DA6AC5B61B3DBC6100E2F3A1 /* Data.swift */,
 				DAE9323C1B43879800A1B8BD /* DNService.swift */,
+				DA3B60791B44992C0046B5CF /* LocalStore.swift */,
 				DA9503F51B3507D40063B5B0 /* Main.storyboard */,
 				DA9503F81B3507D40063B5B0 /* Images.xcassets */,
 				DA9503FA1B3507D40063B5B0 /* LaunchScreen.xib */,
@@ -350,6 +353,7 @@
 				DAAC76F81B3BAC740047DC86 /* LearnViewController.swift in Sources */,
 				DA61538D1B3CC9EC00FD4A97 /* MenuViewController.swift in Sources */,
 				DA7CDAD71B4350A900AB5C7A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				DA3B607A1B44992C0046B5CF /* LocalStore.swift in Sources */,
 				DAC6B9581B39027A00954189 /* LoginViewController.swift in Sources */,
 				DA61538B1B3C790600FD4A97 /* StoriesTableViewController.swift in Sources */,
 				DA61538F1B3CCAFD00FD4A97 /* WebViewController.swift in Sources */,
