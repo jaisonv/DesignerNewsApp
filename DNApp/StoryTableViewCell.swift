@@ -33,6 +33,9 @@ class StoryTableViewCell: UITableViewCell {
         upvoteButton.force = 3
         upvoteButton.animate()
         
+        let sound = SoundPlayer()
+        sound.playSound("upvote.wav")
+        
         delegate?.storyTableViewCellDidTouchUpvote(self, sender: sender)
     }
     

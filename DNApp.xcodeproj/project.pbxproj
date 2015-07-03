@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7BC109D50957815511BA23C8 /* Pods_DNApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B046359960052B4E9BC327AB /* Pods_DNApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DA3928AE1B45E2F400357DF6 /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3928AD1B45E2F400357DF6 /* ReplyViewController.swift */; };
+		DA3928B21B460D0B00357DF6 /* refresh.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA3928B01B460D0B00357DF6 /* refresh.wav */; };
+		DA3928B31B460D0B00357DF6 /* upvote.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA3928B11B460D0B00357DF6 /* upvote.wav */; };
 		DA3B607A1B44992C0046B5CF /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B60791B44992C0046B5CF /* LocalStore.swift */; };
 		DA3C04DC1B3FE186007E6C08 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C04DB1B3FE186007E6C08 /* CommentsTableViewController.swift */; };
 		DA61538B1B3C790600FD4A97 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */; };
@@ -45,6 +48,9 @@
 		955A9C25E9178D87D1C791CE /* Pods-DNApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNApp/Pods-DNApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B046359960052B4E9BC327AB /* Pods_DNApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D331CB1A3932AC4CB38B457F /* Pods-DNApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNApp/Pods-DNApp.release.xcconfig"; sourceTree = "<group>"; };
+		DA3928AD1B45E2F400357DF6 /* ReplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
+		DA3928B01B460D0B00357DF6 /* refresh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = refresh.wav; sourceTree = "<group>"; };
+		DA3928B11B460D0B00357DF6 /* upvote.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = upvote.wav; sourceTree = "<group>"; };
 		DA3B60791B44992C0046B5CF /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		DA3C04DB1B3FE186007E6C08 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +118,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA3928AF1B460D0B00357DF6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DA3928B01B460D0B00357DF6 /* refresh.wav */,
+				DA3928B11B460D0B00357DF6 /* upvote.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		DA7CDACB1B4350A900AB5C7A /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,12 +165,14 @@
 		DA9503EB1B3507D40063B5B0 /* DNApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA3928AF1B460D0B00357DF6 /* Sounds */,
 				DA7CDACB1B4350A900AB5C7A /* TPKeyboardAvoiding */,
 				DA9503EE1B3507D40063B5B0 /* AppDelegate.swift */,
 				DA61538A1B3C790600FD4A97 /* StoriesTableViewController.swift */,
 				DA6153901B3CDAB800FD4A97 /* StoryTableViewCell.swift */,
 				DA3C04DB1B3FE186007E6C08 /* CommentsTableViewController.swift */,
 				DAE3D0B61B40FEF20060838C /* CommentTableViewCell.swift */,
+				DA3928AD1B45E2F400357DF6 /* ReplyViewController.swift */,
 				DAC6B9571B39027A00954189 /* LoginViewController.swift */,
 				DA61538C1B3CC9EC00FD4A97 /* MenuViewController.swift */,
 				DA61538E1B3CCAFD00FD4A97 /* WebViewController.swift */,
@@ -282,6 +299,8 @@
 			files = (
 				DA9503F71B3507D40063B5B0 /* Main.storyboard in Resources */,
 				DA9503FC1B3507D40063B5B0 /* LaunchScreen.xib in Resources */,
+				DA3928B21B460D0B00357DF6 /* refresh.wav in Resources */,
+				DA3928B31B460D0B00357DF6 /* upvote.wav in Resources */,
 				DA9503F91B3507D40063B5B0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7CDAD51B4350A900AB5C7A /* TPKeyboardAvoidingScrollView.m in Sources */,
+				DA3928AE1B45E2F400357DF6 /* ReplyViewController.swift in Sources */,
 				DAE3D0B71B40FEF20060838C /* CommentTableViewCell.swift in Sources */,
 				DAAC76F81B3BAC740047DC86 /* LearnViewController.swift in Sources */,
 				DA61538D1B3CC9EC00FD4A97 /* MenuViewController.swift in Sources */,

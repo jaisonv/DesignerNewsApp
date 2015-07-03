@@ -51,6 +51,17 @@ struct DNService {
         }
     }
     
+    static func storyForId(storyId: Int, response: (JSON) -> ()) {
+        let urlString = baseURL + ResourcePath.StoryId(storyId: storyId).description
+        let parameters = [
+            "client_id": clientID
+        ]
+        Alamofire.request(.GET, urlString, parameters: parameters).responseJSON() { (_, _, data, _) -> Void in
+            let story = JSON(data ?? [])
+            response(story)
+        }
+    }
+    
     static func loginWithEmail(email: String, password: String, response: (token: String!) -> ()) {
         let urlString = baseURL + ResourcePath.Login.description
         let parameters = [
@@ -85,6 +96,32 @@ struct DNService {
         Alamofire.request(request).responseJSON { (_, urlResponse, _, _) -> Void in
             let successful = urlResponse?.statusCode == 200
             response(successful: successful)
+        }
+    }
+    
+    static func replyStoryWithId(storyId: Int, token: String, body: String, response: (successful: Bool) -> ()) {
+        let urlString = baseURL + ResourcePath.StoryReply(storyId: storyId).description
+        replyWithUrlString(urlString, token: token, body: body, response: response)
+    }
+    
+    static func replyCommentWithId(commentId: Int, token: String, body: String, response: (successful: Bool) -> ()) {
+        let urlString = baseURL + ResourcePath.CommentReply(commentId: commentId).description
+        replyWithUrlString(urlString, token: token, body: body, response: response)
+    }
+    
+    private static func replyWithUrlString(urlString: String, token: String, body: String, response: (successful: Bool) -> ()) {
+        let request = NSMutableURLRequest(URL: NSURL(string: urlString)!)
+        request.HTTPMethod = "POST"
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        request.HTTPBody = "comment[body]=\(body)".dataUsingEncoding(NSUTF8StringEncoding)
+        
+        Alamofire.request(request).responseJSON { (_, _, data, _) -> Void in
+            let json = JSON(data!)
+            if let comment = json["comment"].string {
+                response(successful: true)
+            } else {
+                response(successful: false)
+            }
         }
     }
 }

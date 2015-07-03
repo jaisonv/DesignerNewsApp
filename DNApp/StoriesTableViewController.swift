@@ -29,6 +29,9 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
         loadStories("", page: 1)
         
         refreshControl?.addTarget(self, action: "refreshStories", forControlEvents: UIControlEvents.ValueChanged)
+        
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Avenir Next", size: 18)!], forState: UIControlState.Normal)
+        loginButton.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Avenir Next", size: 18)!], forState: UIControlState.Normal)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -42,6 +45,8 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
     
     func refreshStories() {
         loadStories(section, page: 1)
+        let sound = SoundPlayer()
+        sound.playSound("refresh.wav")
     }
     
     func loadStories(section: String, page: Int) {
@@ -99,7 +104,6 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
             let story = stories[indexPath.row]
             let storyId = story["id"].int!
             DNService.upvoteStoryWithId(storyId, token: token, response: { (successful) -> () in
-                println(successful)
             })
             LocalStore.saveUpvotedStory(storyId)
             cell.configureWithStory(story)
